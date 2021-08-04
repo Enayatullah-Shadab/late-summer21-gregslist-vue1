@@ -1,37 +1,24 @@
 <template>
   <div class="home container-fluid">
-    <!-- <div class="row">
-      <div class="col">
-        <CarForm />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4" v-for="c in cars" :key="c.id">
-        Data passed through prop ':car' to child
-        <CarCard :car="c"/>
-      </div>
-    </div>
-  </div> -->
-
-      <!-- <div class="row">
+      <div class="row">
       <div class="col">
         <JobForm />
       </div>
     </div>
     <div class="row">
       <div class="col-4" v-for="j in jobs" :key="j.id">
-        Data passed through prop ':job' to child
+        <!-- Data passed through prop ':job' to child -->
         <JobCard :job="j"/>
       </div>
     </div>
-  </div> -->
+  </div>
 </template>
 
 <script>
-import { computed, onMounted } from '@vue/runtime-core'
+import { computed,  } from '@vue/runtime-core'
 import {AppState} from '../AppState.js'
-import {carsService } from '../services/CarsService'
-import CarCard from '../components/CarCard.vue'
+// import {jobsService} from '../services/JobsService.js'
+// import CarCard from '../components/CarCard.vue'
 // import CarForm from '../components/CarForm.vue'
 
 export default {
@@ -54,9 +41,9 @@ export default {
       // methods
     }
   },
-  components: {
-    CarCard,
-    // CarForm
-  }
+  // components: {
+  //   CarCard,
+  //   CarForm
+  // }
 }
 </script>
