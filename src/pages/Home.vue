@@ -42,7 +42,7 @@ export default {
       // state,
       // computeds
       jobs: computed(() => AppState.jobs)
-      houses:computed(() => AppState.houses)
+      // houses:computed(() => AppState.houses)
       // methods
     }
   },
