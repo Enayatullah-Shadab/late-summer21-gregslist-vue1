@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { computed,  } from '@vue/runtime-core'
+import { computed, onMounted } from '@vue/runtime-core'
 import {AppState} from '../AppState.js'
 import {jobsService} from '../services/JobsService.js'
 import JobCard from '../components/JobCard.vue'

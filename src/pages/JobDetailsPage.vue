@@ -27,7 +27,7 @@ export default {
       }
     })
     return {
-      car: computed(()=> AppState.activeCar),
+      job: computed(()=> AppState.activeJob),
       async destroy(){
         try {
           await jobsService.destroy(route.params.id)

@@ -4,7 +4,7 @@
         <router-link :to="{name: 'JobDetails', params: {id: job.id}}">
           <div class="p-3">
               <div class="text-center">
-                  <p><b>{{job.company}} - {{job.jobTitle}}</b></p>
+                  <p><b>{{job.company}} - {{job.jobTitle}}-{{job.description}}-{{job.rate}}-{{job.hours}}</b></p>
               </div>
           </div>
         </router-link>

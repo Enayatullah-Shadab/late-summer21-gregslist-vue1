@@ -5,11 +5,7 @@
 
       <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <!-- <li class="nav-item active">
-            <router-link class="nav-link" :to="{name: 'Home'}"
-              >Cars <span class="sr-only">(current)</span></router-link
-            >
-          </li> -->
+  
             <li class="nav-item active">
             <router-link class="nav-link" :to="{name: 'Home'}"
               >Jobs <span class="sr-only">(current)</span></router-link

@@ -1,33 +1,24 @@
 <template>
-    <div job-form>
-        <form action="">
+    <div class="job-form">
+        <form class="d-flex" @submit.prevent="createJob">
         <div class="form-group">
         <label for="company">Company</label>
-        <input type="text" name="company"
-        v-model="state.newJob.company"
-        class="form-control"
-        placeholder="Company..." required>
+        <input type="text" name="company" v-model="state.newJob.company" class="form-control" placeholder="Company..." required/>
       </div>
-         <div job-form>
-        <form action="">
-        <div class="form-group">
+       <div class="form-group">
         <label for="jobTitle">JobTitle</label>
         <input type="text" name="jobTitle"
         v-model="state.newJob.jobTitle"
         class="form-control"
         placeholder="JobTitle..." required/>
       </div>
-        <div job-form>
-        <form action="">
-        <div class="form-group">
+       <div class="form-group">
         <label for="description">Description</label>
         <input type="text" name="description"
         v-model="state.newJob.description"
         class="form-control"
         placeholder="description..." required/>
       </div>
-        <div job-form>
-        <form action="">
         <div class="form-group">
         <label for="hours">Hours</label>
         <input type="text" name="hours"
@@ -35,14 +26,15 @@
         class="form-control"
         placeholder="Hours..." required/>
       </div>
-        <div job-form>
-        <form action="">
         <div class="form-group">
         <label for="rate">Rate</label>
         <input type="text" name="rate"
         v-model="state.newJob.rate"
         class="form-control"
         placeholder="rate..." required/>
+      </div>
+            <div class="d-flex align-items-center">
+        <button type="submit" class="btn btn-outline-success">Add</button>
       </div>
         </form>
     </div>
@@ -57,11 +49,11 @@ export default {
   setup() {
     const router = useRouter()
     const state = reactive({
-      newCar: {}
+      newJob: {}
     })
     return {
       state,
-      async createCar(){
+      async createJob(){
         try {
           const newId = await jobsService.createJob(state.newJob)
           // NOTE clears the form
