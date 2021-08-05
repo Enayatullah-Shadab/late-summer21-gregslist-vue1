@@ -50,9 +50,28 @@
 
 <script>
 
-export default{
-    setup() {
-        
-    },
+import { reactive } from '@vue/reactivity'
+import { jobsService } from '../services/JobsService.js'
+import { useRouter } from 'vue-router'
+export default {
+  setup() {
+    const router = useRouter()
+    const state = reactive({
+      newCar: {}
+    })
+    return {
+      state,
+      async createCar(){
+        try {
+          const newId = await jobsService.createJob(state.newJob)
+          // NOTE clears the form
+          state.newJob = {}
+          router.push({name: 'JobDetails', params: {id: newId}})
+        } catch (error) {
+          console.error(error)
+        }
+      }
+    }
+  }
 }
 </script>

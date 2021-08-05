@@ -17,23 +17,21 @@
 <script>
 import { computed,  } from '@vue/runtime-core'
 import {AppState} from '../AppState.js'
-// import {jobsService} from '../services/JobsService.js'
-// import CarCard from '../components/CarCard.vue'
-// import CarForm from '../components/CarForm.vue'
+import {jobsService} from '../services/JobsService.js'
+import JobCard from '../components/JobCard.vue'
+import JobForm from '../components/JobForm.vue'
 
 export default {
   name: 'Home',
   setup(){
     // state
-
-    // mounted
-    // onMounted(async ()=>{
-    //   try {
-    //     await carsService.getCars()
-    //   } catch (error) {
-    //     console.error(error)
-    //   }
-    // })
+    onMounted(async ()=>{
+      try {
+        await jobsService.getJobs()
+      } catch (error) {
+        console.error(error)
+      }
+    })
     return {
       // state,
       // computeds
@@ -41,9 +39,9 @@ export default {
       // methods
     }
   },
-  // components: {
-  //   CarCard,
-  //   CarForm
-  // }
+  components: {
+    JobCard,
+    JobForm
+  }
 }
 </script>

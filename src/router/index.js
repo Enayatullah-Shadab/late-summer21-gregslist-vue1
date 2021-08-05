@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import CarDetailsPage from '../pages/CarDetailsPage.vue'
+import JobDetailsPage from '../pages/JobDetailsPage.vue'
 import Home from '../pages/Home.vue'
 
 
@@ -10,9 +10,9 @@ const routes = [
     component: Home
   },{
     // required param ':id'
-    path: '/car-details/:id',
-    name: 'CarDetails',
-    component: CarDetailsPage
+    path: '/job-details/:id',
+    name: 'JobDetails',
+    component: JobDetailsPage
   }
 ]
 

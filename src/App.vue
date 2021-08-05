@@ -10,7 +10,7 @@
               >Cars <span class="sr-only">(current)</span></router-link
             >
           </li> -->
-                <li class="nav-item active">
+            <li class="nav-item active">
             <router-link class="nav-link" :to="{name: 'Home'}"
               >Jobs <span class="sr-only">(current)</span></router-link
             >
@@ -32,7 +32,7 @@
   <footer class="container-fluid bg-primary">
     <div class="row">
       <div class="col text-center p-3 text-light">
-        <p>Made with <img class="logo" src="./assets/logo.png" /> by Codeworks</p>
+        <p>Made with <img class="logo" src="./assets/logo.png" /> by Shadab</p>
       </div>
     </div>
   </footer>
