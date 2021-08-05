@@ -13,7 +13,13 @@ const routes = [
     path: '/job-details/:id',
     name: 'JobDetails',
     component: JobDetailsPage
-  }
+  },
+// {
+//     // required param ':id'
+//     path: '/house-details/:id',
+//     name: 'HouseDetails',
+//     component: HouseDetailsPage
+//   }
 ]
 
 const router = createRouter({

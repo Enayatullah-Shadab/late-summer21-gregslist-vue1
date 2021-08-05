@@ -11,13 +11,24 @@
               >Jobs <span class="sr-only">(current)</span></router-link
             >
           </li>
+             <li class="nav-item active">
+            <router-link class="nav-link" :to="{name: 'Home'}"
+              >Houses <span class="sr-only">(current)</span></router-link
+            >
+          </li>
+             <li class="nav-item active">
+            <router-link class="nav-link" :to="{name: 'Home'}"
+              >Cars <span class="sr-only">(current)</span></router-link
+            >
+          </li>
           
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#">Cars</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Houses</a>
-          </li>
+          </li> -->
+          
         </ul>
       </div>
     </nav>
