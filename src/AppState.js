@@ -1,9 +1,11 @@
 import { reactive } from "vue"
 
 export const AppState = reactive({
-  // cars: [],
-  // activeCar: {}
+  cars: [],
+  activeCar: {},
   jobs: [],
   activeJob: {},
+  houses: [],
+  activeHouse: {},
  
 })
